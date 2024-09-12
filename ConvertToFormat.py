@@ -1,24 +1,38 @@
 #!/bin/python
+# ./ConvertToFormat.py
 # Made by WafflesExploits
 from base64 import b64encode 
 
-text = """unsigned char Encrypted_Shellcode[] = {0x99,0x12 }; 
+#--Replace these values--
+delimiter = "-"
+variables = """
+unsigned char Encrypted_Shellcode[] = {0x99,0x12 }; 
+
 unsigned char Encrypted_Key[] = {0xF6,0x6B}; 
+
 unsigned char Protected_Key_for_bruteforce[] = {0x00,0xF0}; 
+
 BYTE Hint_Byte = 0xCB;"""
+
+#--Script Start--
 # Remove strings
+text = variables
+text = text.replace("\n","");
 text = text.replace("unsigned char ", "");
 text = text.replace("BYTE ", "");
 text = text.replace("[]", "");
-text = text.replace("{", "").replace("};", "");
 text = text.replace(";","\n");
-text = text.replace(" = ","-");
+text = text.replace("{", "").replace("}", "");
+text = text.replace(" = ",delimiter);
+text = text.replace(" ","");
+text = text[:-1] # Remove last \n character
 
-# Text final format:
-#Encrypted_Shellcode-0x99,0x12  
+#print(text)
+# Example Text final format:
+#Encrypted_hex_code-0x99,0x12  
 #Encrypted_Key-0xF6,0x6B 
 #Protected_Key_for_bruteforce-0x00,0xF0 
-#Hint_Byte-0xCB
+#HintByte-0xCB
 
 text_bytes = text.encode('utf-8')
 
