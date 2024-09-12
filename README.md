@@ -14,4 +14,8 @@ Code of this project:
 - Specify delimiter
 - Specify output file path
 
-![image](https://github.com/user-attachments/assets/47e65913-a8c8-4f21-81ac-12834258b8cc)
+<img src="https://github.com/user-attachments/assets/47e65913-a8c8-4f21-81ac-12834258b8cc" width="601" height="169">
+
+## Video Demo
+
+[Video Demo](https://wafflesexploits.github.io/assets/video_demo_http-stager.mp4)
