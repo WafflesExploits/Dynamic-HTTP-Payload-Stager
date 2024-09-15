@@ -1,5 +1,5 @@
 # Dynamic HTTP(S) Payload-Stager
-**-> A dynamic HTTP Stager that automates updating decryption variables, saving time and effort in managing shellcode loaders.**
+**-> A dynamic HTTP/s Payload Stager that automates updating decryption variables, saving time and effort in managing shellcode loaders.**
 
 Learn more about this in my [blog post](https://wafflesexploits.github.io/posts/Dynamic-HTTP-Payload-Stager/)
 
