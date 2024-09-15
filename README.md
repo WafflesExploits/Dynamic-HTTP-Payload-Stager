@@ -12,7 +12,7 @@ Code of this project:
 [Video Demo](https://wafflesexploits.github.io/assets/video_demo_http-stager.mp4)
 
 ## Update:
-### \> Added new console arguments to ConvertToFormat.py to make it more easy to automate:
+#### \> Added new console arguments to ConvertToFormat.py to make it more easy to automate:
 
 - Read from file
 - Specify delimiter
